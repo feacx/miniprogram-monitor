@@ -2,6 +2,7 @@
   "compilerOptions": {
     "rootDir": "./src",
     "target": "ESNext",
+    "declaration": true,
     "useDefineForClassFields": true,
     "module": "ESNext",
     "lib": ["ESNext", "DOM"],
