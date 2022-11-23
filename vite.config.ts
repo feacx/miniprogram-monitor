@@ -29,6 +29,15 @@ module.exports = defineConfig({
       formats: ["es", "cjs", "iife"],
       fileName: (format) => fileName[format],
     },
-    outDir: './lib'
+    rollupOptions: {
+      input: ["./src/index.ts"],
+      treeshake: true,
+      output: {
+        format: "commonjs",
+        dir: "./lib",
+        entryFileNames: "[name].js",
+      },
+      external: ["rxjs"],
+    },
   },
 });

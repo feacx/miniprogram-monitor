@@ -13,6 +13,7 @@
   "scripts": {
     "dev": "vite --host",
     "build": "tsc && vite build && dts-bundle-generator --config ./dts-bundle-generator.config.ts",
+    "serve": "tsc && vite build -w && dts-bundle-generator --config ./dts-bundle-generator.config.ts",
     "test": "jest --runInBand",
     "test:coverage": "jest --runInBand --coverage",
     "lint:scripts": "eslint . --ext .ts",
